@@ -1,0 +1,9 @@
+my_remind_job:
+  cron: "*/1 * * * *"
+  class: "RemindWorker"
+  queue: remind
+my_async_job:
+  cron: "*/1 * * * *"
+  class: "AsyncJob"
+  queue: async_log_job
+  active_job: true

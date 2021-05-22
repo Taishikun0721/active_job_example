@@ -1,0 +1,2 @@
+module Exports::UserInformationsHelper
+end

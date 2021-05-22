@@ -1,0 +1,10 @@
+<%= form_with url: welcomes_path, local: true do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+
+  <%= f.submit 'メール送信'%>
+<% end %>
+
+<%= link_to 'ユーザー一覧画面', users_path %>
